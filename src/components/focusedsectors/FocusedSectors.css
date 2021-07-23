@@ -1,0 +1,9 @@
+.MuiFormControl-root.focused-sectors {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.MuiFormGroup-root.MuiFormGroup-row {
+  padding: 5px 15px;
+}
