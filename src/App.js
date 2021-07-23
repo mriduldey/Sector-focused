@@ -14,6 +14,7 @@ function App() {
   //state stores focused category as key and sectors under it as value
   const [state, setState] = useState(defaultState);
 
+  //render the focused categories
   const renderFocusedSectors = () => {
     const focusedSectors = [];
     Object.entries(state).forEach(([focusName, sectors]) => {

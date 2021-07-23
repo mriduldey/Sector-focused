@@ -6,6 +6,7 @@ import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 import FormGroup from "@material-ui/core/FormGroup";
 import Grid from "@material-ui/core/Grid";
+import PropTypes from "prop-types";
 
 import "./FocusedSectors.css";
 
@@ -13,7 +14,7 @@ const FocusedSectors = ({ focusName, sectors, handleAddSectors }) => {
   const renderSectors = () => {
     return sectors.map(sector => (
       <Grid item xs={12} sm={6} key={sector}>
-        <CheckSector label={sector} value={sector} />
+        <CheckSector value={sector} />
       </Grid>
     ));
   };
@@ -42,6 +43,12 @@ const FocusedSectors = ({ focusName, sectors, handleAddSectors }) => {
       </FormGroup>
     </FormControl>
   );
+};
+
+CheckSector.propTypes = {
+  focusName: PropTypes.string,
+  sectors: PropTypes.array,
+  handleAddSectors: PropTypes.func,
 };
 
 export default FocusedSectors;
