@@ -50,7 +50,7 @@ function App() {
 
   return (
     <Box width="50%" mx="auto" className="app">
-      <SectorFocusWrapper FocusedWrapperName="Sector">
+      <SectorFocusWrapper focusedWrapperName="Sector">
         {renderFocusedSectors()}
         <Grid item xs={12} sm={8}>
           <Button
